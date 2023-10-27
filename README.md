@@ -1,6 +1,3 @@
-# bot_tg_for_history
-# pip install pyTelegramBotAPI
-
 import telebot
 from telebot import types
 
@@ -37,8 +34,8 @@ def on_click(message):
 @bot.message_handler(commands=['website','site'])
 def site(message):
     markup = types.InlineKeyboardMarkup()
-    markup.add(types.InlineKeyboardButton('Перейти на сайт', url='https://vnutri.online/serial-postuchis-v-moyu-dver-1-sezon.html'))
-    bot.reply_to(message, 'Постучись в мою дверь 1 сезон все серии', reply_markup=markup)
+    markup.add(types.InlineKeyboardButton('Перейти на сайт', url='https://historyandcats.ru/kurs?utm_source=vk&utm_medium=rassilka&utm_campaign=site'))
+    bot.reply_to(message, 'История и котики', reply_markup=markup)
 
 
 @bot.message_handler(content_types=['photo'])
